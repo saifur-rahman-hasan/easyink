@@ -89,6 +89,9 @@ body{ font-family: 'Ubuntu', sans-serif; }
 .section.section-blog_posts .thumbnail .caption-footer{ padding: .8em .8em; border-top: 3px solid #212F3D; }
 .section.section-blog_posts .grid-item { width: 32.45%; }
 
+/* Unnamed - ScrollToTop */
+#btn_back_to_top{ position: fixed; bottom: 3em; right: 3em; z-index: 100; padding: .5em .9em; box-sizing: border-box; background-color: #F5B041; color: #1B2529; cursor: pointer; text-decoration: none; box-shadow: 0 0 1em rgba(0,0,0,.9); border-radius: 2px; display: none;}
+
 /* For Mobile Devices */
 @media screen and (max-width: 767px){
 	
