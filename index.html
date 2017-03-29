@@ -48,10 +48,10 @@
 
 	</head>
 	<body>
-	
-		<!-- Section - intro -->
-		<section class="section section-intro pos-rel">
 		
+		<!-- Section - intro -->
+		<section class="section section-intro pos-rel" data-parallax="scroll" data-image-src="assets/img/section-intro-bg.jpg">
+				
 			<div class="center-vh">
 				<div class="container text-center">
 					<h1 class="headline font-Roboto_Slab m-0">
@@ -79,11 +79,15 @@
 					<!-- Home Headline Column -->
 					<div class="col-sm-6">
 						<div class="headline-col text-center">
-							<h2 class="headline font-Titillium_Web">
+							<h2 class="headline font-Titillium_Web m-t-0">
 								Confused About Which Printer Is Best For You? Complete Our Quick Wizard To Find Out
 							</h2>
 							<p class="headline-details font-Raleway">
 								Need a printer, but not sure where to start? The quickest and easiest way to find out which printer suits you best is to click the button below and complete our wizard. Answer 7 simple questions and we’ll send you a customised report based on your answers. 
+							</p>
+							<p>
+								<br>
+								<a href="#" class="btn btn-success">Know more...</a>
 							</p>
 						</div>
 					</div>
@@ -107,17 +111,11 @@
 					<!-- Service One -->
 					<div class="col-sm-4">
 						<div class="thumbnail">
-							<div class="thumb-img">
+							<div class="thumb-img bg-default">
 								<img src="assets/img/service-printer.png" alt="Service Printer Icon">
 							</div>
 							<div class="caption">
-								<h3 class="font-Titillium_Web">Find the Right Printer</h3>
-								<p class="font-Raleway">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate assumenda, obcaecati illum molestiae praesentium sequi dignissimos quos eius ratione fuga.
-								</p>
-								<p>
-									<a href="#" class="btn btn-default">Know more...</a>
-								</p>
+								<h3 class="font-Titillium_Web"><a href="#">Find the Right Printer</a></h3>
 							</div>
 						</div>
 					</div>
@@ -126,17 +124,11 @@
 					<!-- Service Two -->
 					<div class="col-sm-4">
 						<div class="thumbnail">
-							<div class="thumb-img">
+							<div class="thumb-img bg-default">
 								<img src="assets/img/service-printer-cartridge.png" alt="Service Cartridge Icon">
 							</div>
 							<div class="caption">
-								<h3 class="font-Titillium_Web">Find the Right Cartridge</h3>
-								<p class="font-Raleway">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate assumenda, obcaecati illum molestiae praesentium sequi dignissimos quos eius ratione fuga.
-								</p>
-								<p>
-									<a href="#" class="btn btn-default">Know more...</a>
-								</p>
+								<h3 class="font-Titillium_Web"><a href="#">Find the Right Cartridge</a></h3>
 							</div>
 						</div>
 					</div>
@@ -145,17 +137,11 @@
 					<!-- Service Three -->
 					<div class="col-sm-4">
 						<div class="thumbnail">
-							<div class="thumb-img">
+							<div class="thumb-img bg-default">
 								<img src="assets/img/service-support.png" alt="Service Support Icon">
 							</div>
 							<div class="caption">
-								<h3 class="font-Titillium_Web">Printer and Cartridge Support</h3>
-								<p class="font-Raleway">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate assumenda, obcaecati illum molestiae praesentium sequi dignissimos quos eius ratione fuga.
-								</p>
-								<p>
-									<a href="#" class="btn btn-default">Know more...</a>
-								</p>
+								<h3 class="font-Titillium_Web"><a href="#">Printer and Cartridge Support</a></h3>
 							</div>
 						</div>
 					</div>
@@ -180,6 +166,7 @@
 					<div class="col-sm-12">
 						
 						<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+
                             <!-- Bottom Carousel Indicators -->
                             <ol class="carousel-indicators">
                                 
@@ -214,8 +201,9 @@
                                 </li>
 
                             </ol>
+                            <!-- End Carousel Indicators -->
 
-                            <!-- Carousel Slides / Quotes -->
+                            <!-- Carousel Inner -->
                             <div class="carousel-inner text-center">
 
                                 <!-- Quote 1 -->
@@ -309,10 +297,16 @@
                                 </div>
 
                             </div>
+							<!-- End Carousel Innner -->
 
-                            <!-- Carousel Buttons Next/Prev -->
-                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                            <!-- Carousel Control -->
+                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control">
+                            	<i class="fa fa-chevron-left"></i>
+                            </a>
+                            <a data-slide="next" href="#quote-carousel" class="right carousel-control">
+                            	<i class="fa fa-chevron-right"></i>
+                            </a>
+                            <!-- End Carousel Control -->
                         </div>
 
 					</div>
@@ -325,14 +319,82 @@
 
 		<!-- Sections - Blog Posts -->
 		<section class="section section-blog_posts">
-			
+			<div class="container">
+				
+				<!-- Masonry Grid -->
+				<div class="grid">
+
+					<!-- Blog Post 1 -->
+					<div class="grid-item">
+						
+						<div class="thumbnail">
+							<div class="caption">
+								<h3>Blog Title</h3>
+								<p class="text-justify">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officia illum voluptas et! Esse consectetur aliquam amet, ullam deserunt illo pariatur natus cumque placeat accusantium ut quo commodi possimus odio.
+								</p>
+								<p>
+									<a href="#" class="btn btn-info">Read more...</a>	
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<!-- End Blog Post 1 -->
+
+					<!-- Blog Post 2 -->
+					<div class="grid-item">
+						
+						<div class="thumbnail">
+							<div class="caption">
+								<h3>Blog Title</h3>
+								<p class="text-justify">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officia illum voluptas et! Esse consectetur aliquam amet, ullam deserunt illo pariatur natus cumque placeat accusantium ut quo commodi possimus odio.
+								</p>
+								<p class="text-justify">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officia illum voluptas et! Esse consectetur aliquam amet, ullam deserunt illo pariatur natus cumque placeat accusantium ut quo commodi possimus odio.
+								</p>
+								<p>
+									<a href="#" class="btn btn-info">Read more...</a>	
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<!-- End Blog Post 2 -->
+
+					<!-- Blog Post 3 -->
+					<div class="grid-item">
+						
+						<div class="thumbnail">
+							<div class="caption">
+								<h3>Blog Title</h3>
+								<p class="text-justify">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officia illum voluptas et! Esse consectetur aliquam amet, ullam deserunt illo pariatur natus cumque placeat accusantium ut quo commodi possimus odio.
+								</p>
+								<p>
+									<a href="#" class="btn btn-info">Read more...</a>	
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<!-- End Blog Post 3 -->
+
+				</div>
+				<!-- End Masonry Grid -->
+
+			</div>
 		</section>
 		<!-- End Section - Blog Posts -->
 
 		<!-- Global JS [  jQuery, Bootstrap ] -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+		
+		<!-- Plugins [ Maronry, Parallax ] -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/parallax/parallax.min.js"></script>
 		<!-- APP JS -->
 		<script type="text/javascript" src="assets/js/app.min.js"></script>
 

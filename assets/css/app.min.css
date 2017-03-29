@@ -24,62 +24,57 @@
 .center-vh{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; }
 .pos-rel{ position: relative; }
 .m-0{ margin: 0; }
+.m-t-0{ margin-top: 0; }
+
 /* Sections */
 .section{ padding: 3em 0; }
 
 /* Section - Intro */
-.section.section-intro{ background-color: #e8e8e8; min-height: 60vh; }
-.section.section-intro .headline{ line-height: 1.5em; }
+.section.section-intro{ min-height: 60vh; }
+.section.section-intro .headline{ line-height: 1.5em; color: white; text-shadow: 0 0 1em rgba(0,0,0,.7) }
 
 /* Section - Home */
-.section.section-home{ background-color: #ccc; }
+.section.section-home{ background-color: #F2F3F4; }
 .section.section-home .headline-col{ height: 312px; }
 .section.section-home .headline{ padding: 0 1.5em 1em 1.5em; }
-.section.section-home .headline-details{ padding-left: 1.5em; padding-right: 1.5em; font-size: 1.4em;  }
+.section.section-home .headline-details{ padding-left: 1.5em; padding-right: 1.5em; font-size: 1.2em;  }
+.section.section-home .btn{ padding-left: 2em; padding-right: 2em; }
 
 /* Section - Services */
-.section.section-services{ background-color: #aaa; }
+.section.section-services{ background-color: #D6DBDF; }
 .section.section-services .headline{ margin-bottom: 2em; }
 .section.section-services .thumbnail{ background-color: transparent; border: none; }
-.section.section-services .thumb-img{ border: 1px solid red; width: 180px; height: 180px; padding: 10px; box-sizing: border-box; margin: 0 auto; border-radius: 50%; }
+.section.section-services .thumb-img{ width: 180px; height: 180px; padding: 10px; box-sizing: border-box; margin: 0 auto; border-radius: 50%; border: 3px solid cornflowerblue; transition: all 0.4s; }
 .section.section-services .thumb-img img{ width: 70%; display: block; margin: 0 auto; margin-top: 25px; }
-
+.section.section-services .thumbnail:hover > .thumb-img{ border-style: dashed }
 /* Section - Testimonials */
-.section.section-testimonials{ background-color: lightgrey; }
-.section.section-testimonials #quote-carousel {
-    padding: 0 10px 30px 10px; margin-top: 30px;
-}
+.section.section-testimonials{ background-color: #F4D03F; }
+.section.section-testimonials #quote-carousel { padding: 0 10px 30px 10px; margin-top: 30px; }
 .section.section-testimonials #quote-carousel .carousel-control {
-    background: none; color: #CACACA; font-size: 2.3em; text-shadow: none; margin-top: 30px;
+    background: none; color: #FFF; font-size: 2.3em; text-shadow: none; margin-top: 100px; color: white;
 }
-.section.section-testimonials #quote-carousel .carousel-control.left {
-    left: -60px;
-}
-.section.section-testimonials #quote-carousel .carousel-control.right {
-    right: -60px;
-}
+.section.section-testimonials #quote-carousel .carousel-control.left { left: -60px; }
+.section.section-testimonials #quote-carousel .carousel-control.right { right: -60px; }
 .section.section-testimonials #quote-carousel .carousel-indicators {
     right: 50%; top: auto; bottom: 0px; margin-right: -19px; bottom: -40px;
 }
 .section.section-testimonials #quote-carousel .carousel-indicators li {
     width: 50px; height: 50px; margin: 10px; cursor: pointer; border: 4px solid #eee; border-radius: 50%;
-    opacity: 0.4;
-    overflow: hidden;
-    transition: all 0.4s;
+    opacity: 0.8; overflow: hidden; transition: all 0.4s;
 }
 .section.section-testimonials #quote-carousel .carousel-indicators .active {
     background: #333333; width: 60px; height: 60px; border-color: #dcdcdc; opacity: 1; overflow: hidden;
 	box-shadow: 0 0 1em rgba(0,0,0,.5);
 }
-.section.section-testimonials #quote-carousel .carousel-inner {
-    min-height: 300px;
-}
-.section.section-testimonials #quote-carousel .item blockquote {
-    border-left: none;  margin: 0;
-}
+.section.section-testimonials #quote-carousel .carousel-inner { min-height: 300px; }
+.section.section-testimonials #quote-carousel .item blockquote { border-left: none;  margin: 0; }
 .section.section-testimonials #quote-carousel .item blockquote p:before {
     content: "\f10d"; font-family: 'Fontawesome'; float: left; margin-right: 10px; font-size: 2em;
 }
 .section.section-testimonials #quote-carousel .item blockquote p:after{
 	content: "\f10e"; font-family: 'Fontawesome'; float: right; margin-right: 10px; font-size: 2em;
 }
+
+/* Masonry Grid */
+.grid-item { width: 32.45%; }
+.bg-default{ background-color: #F4F6F6; }
