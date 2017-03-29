@@ -39,7 +39,7 @@ body{ font-family: 'Ubuntu', sans-serif; }
 .section.section-home .headline-col{ height: 312px; padding: 0 1.5em; }
 .section.section-home .headline-details{ font-size: 1.2em; margin-top: 1.2em; }
 .section.section-home .btn{ padding-left: 2em; padding-right: 2em; margin-top: 1.3em; border-radius: 3px; }
-
+.section.section-home .embed-responsive{ box-shadow: 0 0 1.2em rgba(0,0,0,.8); }
 /* Section - Services */
 .section.section-services{ background-color: #D6DBDF; }
 .section.section-services .headline{ margin-bottom: 2em; }
