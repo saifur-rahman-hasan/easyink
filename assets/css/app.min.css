@@ -1,30 +1,85 @@
 /*
 	
-	Project Name 			:	Bootstrap Starter Kit;
-	Project Description 	:	A Simple Bootstrap Theme Starter Kit, which will reduce your few time;
-	Author Name 			:	Saifur Rahman (Hasan);
+	Project Name 			:	Easylink;
+	Project Description 	:	Genuine and Compatible Printer Cartridge Superstore NZ;
+	Author Name 			:	Saifur Rahman (Hasan) || Full Stack Web Developer; 
 	Author Mobile Number 	:	+8801727213319;
-	Author Email 			:	saifur.dohs@gmail.com || me@coderpalace.com;	
-	__________________________________________________________________________________________________
-	
-	Project Name 			:	Project Name;
-	Project Description 	:	Project Description;
-	Author Name 			:	Author Full name;
-	Author Mobile Number 	:	Author Mobile Number;
-	Author Email 			:	Author Email Address;
+	Author Email 			:	saifur.dohs@gmail.com
 
 */
 
-/*
-	# Google Font Families
+
+/* Google Font Families */
 	------------------------------------------
-	font-family: 'Roboto', sans-serif;
-	font-family: 'Raleway', sans-serif;
-	font-family: 'Roboto Slab', serif;
-	font-family: 'Ubuntu', sans-serif;
-	font-family: 'Titillium Web', sans-serif;
-	font-family: 'Lobster', cursive;
-*/
+.font-Roboto{ font-family: 'Roboto', sans-serif; }
+.font-Raleway{ font-family: 'Raleway', sans-serif; }
+.font-Roboto_Slab{ font-family: 'Roboto Slab', serif; }
+.font-Ubuntu{ font-family: 'Ubuntu', sans-serif; }
+.font-Titillium_Web{ font-family: 'Titillium Web', sans-serif; }
+.font-Lobster{ font-family: 'Lobster', cursive; }
+
 
 
 .fa{ vertical-align: middle; }
+.center-vh{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; }
+.pos-rel{ position: relative; }
+.m-0{ margin: 0; }
+/* Sections */
+.section{ padding: 3em 0; }
+
+/* Section - Intro */
+.section.section-intro{ background-color: #e8e8e8; min-height: 60vh; }
+.section.section-intro .headline{ line-height: 1.5em; }
+
+/* Section - Home */
+.section.section-home{ background-color: #ccc; }
+.section.section-home .headline-col{ height: 312px; }
+.section.section-home .headline{ padding: 0 1.5em 1em 1.5em; }
+.section.section-home .headline-details{ padding-left: 1.5em; padding-right: 1.5em; font-size: 1.4em;  }
+
+/* Section - Services */
+.section.section-services{ background-color: #aaa; }
+.section.section-services .headline{ margin-bottom: 2em; }
+.section.section-services .thumbnail{ background-color: transparent; border: none; }
+.section.section-services .thumb-img{ border: 1px solid red; width: 180px; height: 180px; padding: 10px; box-sizing: border-box; margin: 0 auto; border-radius: 50%; }
+.section.section-services .thumb-img img{ width: 70%; display: block; margin: 0 auto; margin-top: 25px; }
+
+/* Section - Testimonials */
+.section.section-testimonials{ background-color: lightgrey; }
+.section.section-testimonials #quote-carousel {
+    padding: 0 10px 30px 10px; margin-top: 30px;
+}
+.section.section-testimonials #quote-carousel .carousel-control {
+    background: none; color: #CACACA; font-size: 2.3em; text-shadow: none; margin-top: 30px;
+}
+.section.section-testimonials #quote-carousel .carousel-control.left {
+    left: -60px;
+}
+.section.section-testimonials #quote-carousel .carousel-control.right {
+    right: -60px;
+}
+.section.section-testimonials #quote-carousel .carousel-indicators {
+    right: 50%; top: auto; bottom: 0px; margin-right: -19px; bottom: -40px;
+}
+.section.section-testimonials #quote-carousel .carousel-indicators li {
+    width: 50px; height: 50px; margin: 10px; cursor: pointer; border: 4px solid #eee; border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.section.section-testimonials #quote-carousel .carousel-indicators .active {
+    background: #333333; width: 60px; height: 60px; border-color: #dcdcdc; opacity: 1; overflow: hidden;
+	box-shadow: 0 0 1em rgba(0,0,0,.5);
+}
+.section.section-testimonials #quote-carousel .carousel-inner {
+    min-height: 300px;
+}
+.section.section-testimonials #quote-carousel .item blockquote {
+    border-left: none;  margin: 0;
+}
+.section.section-testimonials #quote-carousel .item blockquote p:before {
+    content: "\f10d"; font-family: 'Fontawesome'; float: left; margin-right: 10px; font-size: 2em;
+}
+.section.section-testimonials #quote-carousel .item blockquote p:after{
+	content: "\f10e"; font-family: 'Fontawesome'; float: right; margin-right: 10px; font-size: 2em;
+}
