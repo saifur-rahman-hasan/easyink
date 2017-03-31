@@ -17,7 +17,14 @@
 .font-Titillium_Web{ font-family: 'Titillium Web', sans-serif; }
 .font-Lobster{ font-family: 'Lobster', cursive; }
 
-body{ font-family: 'Ubuntu', sans-serif; }
+/*body{ font-family: 'Ubuntu', sans-serif; }
+@media (min-width:992px){
+    .container{width:870px}
+}
+@media (min-width:1200px){
+    .container{width:870px}
+}*/
+
 
 /* Helper Clases */
 .fa{ vertical-align: middle; }
@@ -28,12 +35,37 @@ body{ font-family: 'Ubuntu', sans-serif; }
 .bg-default{ background-color: #F4F6F6; }
 .text-white{ color: white; }
 
+/* Animations */
+/* BELL */
+@keyframes ring {
+	0%{transform:rotate(-15deg)}
+	2%{transform:rotate(15deg)}
+	4%{transform:rotate(-18deg)}
+	6%{transform:rotate(18deg)}
+	8%{transform:rotate(-22deg)}
+	10%{transform:rotate(22deg)}
+	12%{transform:rotate(-18deg)}
+	14%{transform:rotate(18deg)}
+	16%{transform:rotate(-12deg)}
+	18%{transform:rotate(12deg)}
+	20%,100%{transform:rotate(0deg)}
+}
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-ring {
+	animation: ring 2s ease infinite;
+	transform-origin-x: 50%;
+	transform-origin-y: 0px;
+	transform-origin-z: initial;
+}
+
 /* Sections */
-.section{ padding: 5em 0; }
+.section{ padding: 3em 0; }
 
 /* Section - Intro */
-.section.section-intro{ min-height: 35vh; }
-.section.section-intro .headline{ line-height: 1.5em; color: white; text-shadow: 0 0 1em rgba(0,0,0,.7); font-size: 2em; font-family: 'Roboto Slab', serif; }
+.section.section-intro{ padding: 2em 0; }
+.section.section-intro .headline{ line-height: 1.8em; font-size: 2em; font-family: 'Roboto', sans-serif; }
+.section.section-intro .call-us{ font-weight: bold; color: #449d44; }
 
 /* Section - Home */
 .section.section-home{ background-color: #f8f8f8; }
@@ -43,17 +75,22 @@ body{ font-family: 'Ubuntu', sans-serif; }
 .section.section-home .btn{ padding-left: 2em; padding-right: 2em; margin-top: 1.3em; border-radius: 3px; }
 .section.section-home .embed-responsive{ box-shadow: 0 0 1.2em rgba(0,0,0,.8); }
 /* Section - Services */
-.section.section-services{ background-color: #ececec; }
-.section.section-services .headline{ margin-bottom: 2.3em; font-weight: bold; }
-.section.section-services .thumbnail{ background-color: transparent; border: none; }
+.section.section-services{ background-color: #ececec; padding: 3em 0; }
+.section.section-services .headline{ margin-bottom: 1em; font-weight: bold; }
+.section.section-services .thumbnail{ background-color: transparent; border: none; margin-bottom: 0; }
 .section.section-services .thumb-img{ width: 180px; height: 180px; padding: 10px; box-sizing: border-box; margin: 0 auto; border-radius: 50%; border: 2px solid #449d44; transition: all 0.4s; }
 .section.section-services .thumb-img img{ width: 70%; display: block; margin: 0 auto; margin-top: 25px; }
 .section.section-services .thumbnail:hover > .thumb-img{ border-style: dashed }
 .section.section-services .caption-title{ color: #449d44; font-family: 'Titillium Web', sans-serif; }
 
 /* Section - Testimonials */
-.section.section-testimonials{ background-color: #449d44; }
-.section.section-testimonials .headline{ color: white; }
+.section.section-testimonials{ background-color: #FFF; }
+.section.section-testimonials .headline{ margin-bottom: 1.5em; }
+.section.section-testimonials .media-object{ width: 80px; height: 80px; border: 5px solid grey; }
+.section.section-testimonials .media-heading{ color: #449d44; font-family: 'Roboto Slab', serif;  }
+.section.section-testimonials .quote-title { color: #212F3D; font-weight: bold; font-family: 'Roboto Slab', serif; }
+.section.section-testimonials .quote{ font-size: 1.2em; text-align: justify; }
+/*
 .section.section-testimonials #quote-carousel { padding: 0 10px 30px 10px; margin-top: 30px; }
 .section.section-testimonials #quote-carousel .carousel-control {
     background: none; color: #17202A !important; font-size: 2.3em; text-shadow: none; margin-top: 100px; color: white;
@@ -71,14 +108,14 @@ body{ font-family: 'Ubuntu', sans-serif; }
 }
 .section.section-testimonials #quote-carousel .carousel-inner { min-height: 300px; }
 .section.section-testimonials #quote-carousel .carousel-inner .quote,
-.section.section-testimonials #quote-carousel .carousel-inner .quote-title { color: #212F3D; }
+.section.section-testimonials #quote-carousel .carousel-inner 
 .section.section-testimonials #quote-carousel .item blockquote { border-left: none;  margin: 0; }
 .section.section-testimonials #quote-carousel .item blockquote p:before {
     content: "\f10d"; font-family: 'Fontawesome'; float: left; margin-right: 10px; font-size: 2em; opacity: .8; text-shadow: 1px 1px 6px rgba(0,0,0,.9);
 }
 .section.section-testimonials #quote-carousel .item blockquote p:after{
 	content: "\f10e"; font-family: 'Fontawesome'; float: right; margin-right: 10px; font-size: 2em; opacity: .8; text-shadow: 1px 1px 6px rgba(0,0,0,.9);
-}
+}*/
 
 /* Section - Blog Posts */
 
